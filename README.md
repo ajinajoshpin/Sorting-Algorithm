@@ -5,6 +5,8 @@ To write a program to perform selection sort and insertion sort using python pro
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
+## step 1:
+
 ## Selection Sort Algorithm:
 1.	Set the first unsorted element as the minimum
 2.	For each of the unsorted elements, check if the element < current minimum.
@@ -20,19 +22,42 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: ajina joshpin
+RegisterNumber: 23013547
 
 
-
-
+def selection_sort(nums):
+  
+   for i in range(len(nums)):
+      lowest_value_index=i
+      for j in range(i+1,len(nums)):
+           if nums[j]<nums[lowest_value_index]:
+               lowest_value_index=j
+      nums[i],nums[lowest_value_index]=nums[lowest_value_index],nums[i]
+list_of_nums=eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 ```
 ii)	#Insertion Sort
 ```
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: ajina joshpin
+RegisterNumber: 23013547
 
 
-
-
-
+def selection_sort(nums):
+  
+   for i in range(len(nums)):
+      lowest_value_index=i
+      for j in range(i+1,len(nums)):
+           if nums[j]<nums[lowest_value_index]:
+               lowest_value_index=j
+      nums[i],nums[lowest_value_index]=nums[lowest_value_index],nums[i]
+list_of_nums=eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 ```
 
